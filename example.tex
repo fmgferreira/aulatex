@@ -1,6 +1,6 @@
 \documentclass[12pt, a4paper, twoside, titlepage]{article}
 
-% \usepackage{graphicx}
+\usepackage{graphicx}
 
  \title{A not so small \LaTeX{} Article Template\thanks{To your mother}}
 
@@ -71,35 +71,41 @@ important documentclass. But there would be other documentclasses like
  \end{description}
 
 \section{Tabular}
-No paper without a tabular!
+No paper without a tabular, conforme é mostrado na Tabela~\ref{tab:novatabela}.
 
-\begin{tabular}{p{5cm}|r}
-\hline
-\hline
-col1dhagsdhgasd hasd  & col2sajhdjashdjhsahdjahsd\\
-\hline
-col1  & col2\\
-\hline
-col1  & col2\\
-\hline
-col1  & col2\\
-\hline
-col1  & col2\\
-\hline
-col1  & col2\\
-\hline
-\hline
-\end{tabular} 
+\begin{table}
+	\caption{titulo da tabela}
+	\label{tab:novatabela}
+	\centering
+	\begin{tabular}{p{5cm}|r}
+		\hline
+		\hline
+		col1dhagsdhgasd hasd  & col2sajhdjashdjhsahdjahsd\\
+		\hline
+		col1  & col2\\
+		\hline
+		col1  & col2\\
+		\hline
+		col1  & col2\\
+		\hline
+		col1  & col2\\
+		\hline
+		col1  & col2\\
+		\hline
+		\hline
+	\end{tabular} 
+\end{table}
 
 
-% \section{Figure}
-% No paper without a tabular!
+\section{Figure}
+No paper without a tabular. Como pode ser visto na Figura~\ref{fig:maceio}.
 
-% \begin{figure}
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{maceio}
-% 	\caption{Aerial view of Ponta Verde.}
-% \end{figure} 
+\begin{figure}[h]
+	\centering
+ 	\includegraphics[width=0.5\textwidth]{maceio}
+ 	\caption{Aerial view of Ponta Verde.}
+ 	\label{fig:maceio}
+\end{figure} 
 
 
 % \section{Some Math}
